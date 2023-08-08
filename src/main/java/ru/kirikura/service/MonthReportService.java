@@ -1,5 +1,4 @@
 package ru.kirikura.service;
-
 import ru.kirikura.data.Data;
 import ru.kirikura.entity.MonthReport;
 import ru.kirikura.interfaces.Printable;
@@ -19,7 +18,7 @@ public class MonthReportService implements Printable, Readable {
             System.out.println("Statistic for " + outerEntry.getKey() + "\n");
             HashMap<Integer, MonthReport> innerMap = outerEntry.getValue();
             for (Map.Entry<Integer, MonthReport> innerEntry : innerMap.entrySet()) {
-                System.out.println("Day №" + innerEntry.getKey() +  " " + innerEntry.getValue().toString());
+                System.out.println(innerEntry.getKey() +  " " + innerEntry.getValue().toString());
             }
         }
     }
@@ -31,7 +30,7 @@ public class MonthReportService implements Printable, Readable {
         for(String singleReport : reports) {
             String[] toMonthReportArray = singleReport.split(",");
             MonthReport monthReport = new MonthReport(toMonthReportArray[0],
-                    Boolean.valueOf(toMonthReportArray[1]), Integer.valueOf(toMonthReportArray[2]), Integer.valueOf(toMonthReportArray[2]));
+                    Boolean.valueOf(toMonthReportArray[1]), Integer.valueOf(toMonthReportArray[2]), Integer.valueOf(toMonthReportArray[3]));
             monthReportData.put(i, monthReport);
             i++;
         }

@@ -1,7 +1,5 @@
 package ru.kirikura.entity;
 
-import java.util.ArrayList;
-
 public class MonthReport {
     String itemName;
     boolean isExpensive;
@@ -14,6 +12,23 @@ public class MonthReport {
         this.quantity = quantity;
         this.sumOfOne = sumOfOne;
     }
+
+    public String getItemName() {
+        return itemName;
+    }
+
+    public boolean isExpensive() {
+        return isExpensive;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public int getSumOfOne() {
+        return sumOfOne;
+    }
+
     @Override
     public String toString() {
         return "{" +

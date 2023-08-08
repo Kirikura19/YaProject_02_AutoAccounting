@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc54e83-265d-4038-ab2b-608e08715e93" name="Changes" comment="Developed menu, menu service, month and year report entity, and MothReportService">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/m202301.csv" afterDir="false" />
+    <list default="true" id="ddc54e83-265d-4038-ab2b-608e08715e93" name="Changes" comment="Added year report and compare function">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/y.2023.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/data/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/MonthReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/MonthReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/YearReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/YearReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MonthReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MonthReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/YearReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/YearReportService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/userInterface/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/userInterface/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MonthReport.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/m202301.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +59,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/revan/IdeaProjects/YaProject_02_AutoAccounting/src/main/java"
+    "last_opened_file_path": "/Users/revan/IdeaProjects/YaProject_02_AutoAccounting/src/main/resources"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
@@ -95,8 +105,18 @@
       <option name="project" value="LOCAL" />
       <updated>1691497874100</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New MenuService. Updated logic">
+      <created>1691504304425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691504304425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -113,17 +133,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added comments to all classes for future work." />
     <MESSAGE value="Developed menu, menu service, month and year report entity, and MothReportService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Developed menu, menu service, month and year report entity, and MothReportService" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/kirikura/service/MenuService.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="New MenuService. Updated logic" />
+    <MESSAGE value="Added year report and compare function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added year report and compare function" />
   </component>
 </project>
