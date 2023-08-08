@@ -5,11 +5,10 @@ import ru.kirikura.service.MonthReportService;
 import java.util.Scanner;
 public class Menu {
     private String[] menuOptions = new String[] {
-            "1. Read month report",
-            "2. Read year report",
-            "3. Compare reports",
-            "4. Write info about month report",
-            "5. Write info about year report"
+            "1. Read report (Month or Year)",
+            "2. Compare reports",
+            "3. Write info about month report",
+            "4. Write info about year report"
     };
     public void printMenu() {
         System.out.println("\n");
@@ -28,11 +27,10 @@ public class Menu {
                 System.out.print("> ");
                 option = scanner.nextInt();
                 switch (option) {
-                    case 1 : menuService.readMonthReport(); break;
+                    case 1 : menuService.readReport(); break;
                     case 2 : break;
-                    case 3 : break;
-                    case 4 : menuService.writeInfoAboutMonthReport(); break;
-                    case 5 : break;
+                    case 3 : menuService.writeInfoAboutMonthReport(); break;
+                    case 4 : break;
                     case 0 : break;
                 }
             }catch (Exception e) {
@@ -41,11 +39,4 @@ public class Menu {
             }
         }
     }
-    /*
-    * Console menu:
-1. Read month report - InputReportService -> MonthService -> MonthReport
-2. Read year report ...
-3. Compare reports
-4. Write info about month report -
-5. Write info about year report*/
 }

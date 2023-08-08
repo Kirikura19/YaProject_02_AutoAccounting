@@ -17,20 +17,25 @@ public class MenuService {
     private Data data = new Data();
     private MonthReportService monthReportService = new MonthReportService(data);
     public Path readPath() {
-        // src/main/resources/MonthReport.csv
-        System.out.println("Enter path to CSV file: ");
+        // src/main/resources/m202301.csv
         Scanner scanner = new Scanner(System.in);
-        Path pathToCheck = Paths.get(scanner.nextLine());
-        if(Files.exists(pathToCheck)) {
-            return pathToCheck;
+        Path pathToCheck;
+
+        while (true) {
+            System.out.println("Enter path to CSV file: ");
+            pathToCheck = Paths.get(scanner.nextLine());
+
+            if (!pathToCheck.getFileName().toString().matches("[my]\\d{6}\\.csv")) {
+                System.out.println("Wrong file name");
+            } else if (!Files.exists(pathToCheck)) {
+                System.out.println("File not exists");
+            } else {
+                break;
+            }
         }
-        else{
-            System.out.println("File not exists");
-            readPath();
-        }
-        return null;
+        return pathToCheck;
     }
-    public void readMonthReport() {
+    public void readReport() {
         Path path = readPath();
         ArrayList<String> tempLines = new ArrayList<>();
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader(path.toFile()))) {
@@ -41,10 +46,16 @@ public class MenuService {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        tempLines.set(0, path.toFile().getName().split("")[0]);
-        monthReportService.readReport(tempLines);
+        switch(path.toFile().getName().split("")[0]) {
+            case "m":
+                tempLines.set(0, path.toFile().getName().split("")[5] + path.toFile().getName().split("")[6]);
+                monthReportService.readReport(tempLines);
+                break;
+            case "y":
+                break;
+
+        }
     }
-    public void readYearReport() {}
     public void compareReports() {}
     public void writeInfoAboutMonthReport() {
         if(data.getMonthReports().isEmpty())

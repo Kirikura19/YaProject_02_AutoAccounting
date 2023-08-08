@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc54e83-265d-4038-ab2b-608e08715e93" name="Changes" comment="Added comments to all classes for future work.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MonthReport.csv" afterDir="false" />
+    <list default="true" id="ddc54e83-265d-4038-ab2b-608e08715e93" name="Changes" comment="Developed menu, menu service, month and year report entity, and MothReportService">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/m202301.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/MonthReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/MonthReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/YearReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/entity/YearReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/interfaces/Readable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/interfaces/Readable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MonthReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/MonthReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/YearReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/service/YearReportService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/kirikura/userInterface/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kirikura/userInterface/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691449676616</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Developed menu, menu service, month and year report entity, and MothReportService">
+      <created>1691497874100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691497874100</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +112,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added comments to all classes for future work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments to all classes for future work." />
+    <MESSAGE value="Developed menu, menu service, month and year report entity, and MothReportService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Developed menu, menu service, month and year report entity, and MothReportService" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/kirikura/service/MenuService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
