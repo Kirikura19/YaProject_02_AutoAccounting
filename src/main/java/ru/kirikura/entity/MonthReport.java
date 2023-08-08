@@ -14,4 +14,13 @@ public class MonthReport {
         this.quantity = quantity;
         this.sumOfOne = sumOfOne;
     }
+    @Override
+    public String toString() {
+        return "{" +
+                "itemName='" + itemName + '\'' +
+                ", isExpensive=" + isExpensive +
+                ", quantity=" + quantity +
+                ", sumOfOne=" + sumOfOne +
+                '}';
+    }
 }

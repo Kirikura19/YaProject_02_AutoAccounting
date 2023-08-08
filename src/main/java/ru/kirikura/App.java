@@ -1,13 +1,10 @@
 package ru.kirikura;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import ru.kirikura.userInterface.Menu;
+
+public class App {
+    public static void main( String[] args ) {
+        Menu menu = new Menu();
+        menu.userChoice();
     }
 }

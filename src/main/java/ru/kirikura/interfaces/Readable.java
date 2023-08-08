@@ -1,5 +1,7 @@
 package ru.kirikura.interfaces;
 
+import java.util.ArrayList;
+
 public interface Readable {
-    void readReport(); //read report to memory
+    void readReport(ArrayList<String> report); //read report to memory
 }
